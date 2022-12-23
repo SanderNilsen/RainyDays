@@ -2,6 +2,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
 .header {
   display: flex;
   background-color: white;
@@ -20,14 +30,6 @@
   color: white;
   text-align: center;
   margin: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 nav ul {
@@ -58,25 +60,110 @@ input[type="text"] {
   background-color: lightgray;
 }
 
-img {
+/* Main */
+
+main img {
   max-width: 100%;
 }
 
 main {
   flex: 1;
 }
+.slider {
+  width: 85vmin;
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  overflow: hidden;
+}
+.slide {
+  display: flex;
+  animation: slide 16s infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+.categories {
+  display:flex;
+  
+}
+.categories img {
+  width: 180px;
+  height: 250.09px;
+}
+
+/* Footer */
 
 footer {
   background-color: #0a3641;
   color: white;
   padding: 20px;
-  display: flex;
   justify-content: center;
   align-items: baseline;
+  position: sticky;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.img {
+  grid-row: 1;
+  grid-column: 2/4;
+}
+
+.service {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.about {
+  grid-row: 2;
+  grid-column: 3;
+}
+.socials {
+  grid-row: 2;
+  grid-column: 4;
+  align-self: end;
+}
+.socials img {
+  width: 30.73px;
+  height: 30px;
+}
+
+footer img {
+  width: 170px;
+  height: 53;
 }
 
 footer ul {
   list-style: none;
+  padding: 0;
 }
 footer li {
   margin-bottom: 15px;
@@ -91,6 +178,7 @@ h4 {
   font-weight: bold;
 }
 
+/* Media */
 
 @media (max-width: 600px) {
   nav,
@@ -98,10 +186,7 @@ h4 {
     display: none;
     position: fixed;
   }
-}
-
-@media (max-width: 600px) {
   footer a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
