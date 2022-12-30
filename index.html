@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Index Page</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -8,11 +8,18 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b318972c4d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <section class="header">
-        <img src="images/RainyDays_Logo2.png" alt="logo" />
+        <!--Hamburgermenu
+       <input type="checkbox" id="menu-checkbox"/>
+       <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label> -->
+        <img id="logo" src="images/RainyDays_Logo2.png" alt="logo" />
         <nav>
           <ul>
             <li><a href="page1.html">Men</a></li>
@@ -24,9 +31,9 @@
           <input type="text" placeholder="Search" />
         </form>
       </section>
-      <section class="top-bar">
+      <div class="top-bar">
         <p>SALE! Up to 50% off</p>
-      </section>
+      </div>
     </header>
 
     <main>
@@ -39,16 +46,28 @@
         </div>
       </div>
 
-      <div class="categories">
-        <img src="images/hiking.png" alt="hiking" />
-        <img src="images/Camping.png" alt="camping" />
-        <img src="images/Canoeing.png" alt="canoeing" />
-        <img src="images/Skiing.png" alt="skiing" />
-      </div>
-      <div class="categories_mobile">
-        <img src="images/Men_Products.png" alt="Men" />
-        <img src="images/Women_Products.png" alt="Women" />
-      </div>
+      <section class="categories">
+        <h3>Explore Categories</h3>
+        <div class="category">
+          <a href="products.html" id="hiking"><img src="images/hiking.png" alt="hiking" /></a>
+        </div>
+        <div class="category">
+          <a href="products.html" id="camping"><img src="images/Camping.png" alt="camping"/></a>
+        </div>
+        <div class="category">
+          <a href="products.html" id="canoeing"><img src="images/Canoeing.png" alt="canoeing"/></a>
+        </div>
+        <div class="category">
+          <a href="products.html" id="skiing"><img src="images/Skiing.png" alt="skiing"/></a>
+        </div>     
+        <div class="rectangle"></div>
+      </section>
+
+      <section class="categories_mobile">
+          <a href="products.html"><img src="images/Men_Products.png" alt="Men"/></a>
+          <a href="products.html"><img src="images/Women_Products.png" alt="Women"/></a>
+        </section>
+
     </main>
 
     <footer>
