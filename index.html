@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Home</title>
+    <title>Home | RainyDays</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -19,15 +19,15 @@
         <!--Hamburgermenu
        <input type="checkbox" id="menu-checkbox"/>
        <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label> -->
-        <img id="logo" src="images/RainyDays_Logo2.png" alt="logo" />
+       <a href="index.html"><img id="logo" src="images/RainyDays_Logo2.png" alt="logo" /></a>
         <nav>
           <ul>
-            <li><a href="page1.html">Men</a></li>
-            <li><a href="page2.html">Woman</a></li>
-            <li><a href="page3.html">Sale</a></li>
+            <li><a href="products.html">Clothing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <form>
+        <form class="searchbar">
           <input type="text" placeholder="Search" />
         </form>
       </section>
@@ -37,36 +37,42 @@
     </header>
 
     <main>
-      <img src="images/tim-stief-YFFGkE3y4F8-unsplash.jpg" alt="main-cover" />
-      <div class="slider">
+      <section class="background_img">
+        <img src="images/tim-stief-YFFGkE3y4F8-unsplash.jpg" alt="main-cover" />
+      </section>
+
+      <section class="slider">
         <div class="slide">
           <img src="images/image1.png" alt="image 1" />
           <img src="images/image2.png" alt="image 2" />
           <img src="images/image3.png" alt="image 3" />
         </div>
-      </div>
+      </section>
 
-      <section class="categories">
-        <div class="category_heading"><h3>Explore Categories</h3></div>
-        <div class="category">
-          <a href="products.html" id="hiking"
-            ><img src="images/hiking.png" alt="hiking"
-          /></a>
-        </div>
-        <div class="category">
-          <a href="products.html" id="camping"
-            ><img src="images/Camping.png" alt="camping"
-          /></a>
-        </div>
-        <div class="category">
-          <a href="products.html" id="canoeing"
-            ><img src="images/Canoeing.png" alt="canoeing"
-          /></a>
-        </div>
-        <div class="category">
-          <a href="products.html" id="skiing"
-            ><img src="images/Skiing.png" alt="skiing"
-          /></a>
+      <section>
+        <div class="categories_container">
+          <div id="rectangle"></div>
+          <div class="category_heading"><h3>Explore Categories</h3></div>
+          <div class="category category1">
+            <a href="products.html" id="hiking"
+              ><img src="images/hiking.png" alt="hiking"
+            /></a>
+          </div>
+          <div class="category category2">
+            <a href="products.html" id="camping"
+              ><img src="images/Camping.png" alt="camping"
+            /></a>
+          </div>
+          <div class="category category3">
+            <a href="products.html" id="canoeing"
+              ><img src="images/Canoeing.png" alt="canoeing"
+            /></a>
+          </div>
+          <div class="category category4">
+            <a href="products.html" id="skiing"
+              ><img src="images/Skiing.png" alt="skiing"
+            /></a>
+          </div>
         </div>
       </section>
 
@@ -79,11 +85,19 @@
         /></a>
       </section>
 
-      <section class="scott_products">
-        <div><h3>NEW arrivals from SCOTT</h3></div>
-        <div class="scott_product"><img src="images/scott1.png" alt="Scott_Product" /></div>
-        <div class="scott_product"><img src="images/scott2.png" alt="Scott_Product" /></div>
-        <div class="scott_product"><img src="images/scott3.png" alt="Scott_Product" /></div>
+      <section>
+        <div class="scott_container">
+          <div class="scott_text"><h3>NEW arrivals from SCOTT</h3></div>
+          <div class="scott_product scott_product1">
+            <img src="images/scott1.png" alt="Scott_Product" />
+          </div>
+          <div class="scott_product scott_product2">
+            <img src="images/scott2.png" alt="Scott_Product" />
+          </div>
+          <div class="scott_product scott_product3">
+            <img src="images/scott3.png" alt="Scott_Product" />
+          </div>
+        </div>
       </section>
     </main>
 
