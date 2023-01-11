@@ -204,6 +204,10 @@ footer {
   justify-items: center;
 }
 
+.container h4 {
+  padding: 10px 10px 5px;
+}
+
 .img {
   grid-row: 1;
   grid-column: 2/6;
