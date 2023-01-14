@@ -17,6 +17,11 @@ header {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
+.hamburger_icon,
+#menu-checkbox {
+  display: none;
+}
+
 .header {
   display: flex;
   background-color: white;
@@ -27,7 +32,7 @@ header {
 
 #logo {
   width: 119px;
-  height: 53;
+  height: 53px;
 }
 
 .top-bar p {
@@ -126,7 +131,7 @@ main {
 
 #rectangle {
   background-color: #175868;
-  height: 50px;
+  min-height: 50px;
   grid-row: 2;
   align-self: center;
   grid-column: 1/7;
@@ -168,7 +173,7 @@ main {
 .scott_container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding-bottom: 40px;
+  padding: 50px 0px 50px 0px;
   gap: 10px;
   align-items: center;
 }
@@ -217,8 +222,6 @@ footer {
   grid-row: 2;
   grid-column: 3;
   min-width: max-content;
-  width: 20px;
-
 }
 
 .about {
@@ -228,7 +231,7 @@ footer {
 }
 .socials {
   grid-row: 2;
-  grid-column: 5;
+  grid-column: 6;
   align-self: end;
   min-width: max-content;
 }
@@ -240,7 +243,7 @@ footer {
 
 footer img {
   width: 170px;
-  height: 53;
+  height: 53px;
 }
 
 footer ul {
@@ -263,16 +266,45 @@ h4 {
 /* Products-Page */
 
 .products_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  gap: 30px;
   padding: 40px;
 }
 
-#top-text  {
+.product {
+  transition: 0.5s all ease-in-out;
+  max-width: 157px;
+  min-width: 157px;
+  max-height: 400px;
+}
+
+.product_img {
+  width: 157px;
+  height: 175px;
+  background-color: lightgray;
+  transition: 0.2s all ease-in-out;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.product h3 {
+  font-weight: 900;
+}
+
+#top-text {
   color: #0a3641;
   display: flex;
   padding-left: 40px;
+}
+
+.price {
+  color: red;
+  font-weight: 900;
 }
 
 /* Media */
@@ -285,6 +317,7 @@ h4 {
 
   header {
     position: sticky;
+    display: block;
     top: 0;
     z-index: 2;
   }
@@ -325,13 +358,55 @@ h4 {
     padding-bottom: 40px;
     gap: 10px;
   }
-  .products_container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
- }
 
+  .products_container {
+    justify-content: center;
+  }
+
+  #top-text {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;
+  }
+
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.5rem;
+    color: #0a3641;
+  }
+
+  .hamburger_icon {
+    display: contents;
+    
+  }
+
+  #logo {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  nav {
+    position: absolute;
+    background: white;
+    top: 112px;
+    left: 0px;
+  }
+
+  nav ul {
+    display: block;
+    padding: 0px;
+  }
+
+  nav li {
+    padding: 10px 20px;
+  }
 }
