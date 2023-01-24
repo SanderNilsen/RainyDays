@@ -88,6 +88,7 @@ main img {
 main {
   flex: 1;
 }
+
 .slider {
   width: 80vmin;
   position: relative;
@@ -95,6 +96,7 @@ main {
   left: 50%;
   overflow: hidden;
 }
+
 .slide {
   display: flex;
   animation: slide 16s infinite;
