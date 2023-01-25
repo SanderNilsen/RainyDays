@@ -4,27 +4,24 @@
   <head>
     <title>Home | RainyDays</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/b318972c4d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class="header">
+
+ <header>
+      <div class="header-container">
         <input type="checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="hamburger_icon"
-          ><i class="fas fa-bars"></i
-        ></label>
-        <a href="index.html" id="logo"
-          ><img id="logo" src="images/RainyDays_Logo2.png" alt="logo"
-        /></a>
+        <label for="menu-checkbox" class="hamburger_icon">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <a href="index.html" id="logo">
+          <img id="logo" src="images/rainydays-logo1.png" alt="logo-header" />
+        </a>
+
         <nav>
           <ul>
             <li><a href="products.html">Clothing</a></li>
@@ -32,11 +29,13 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
         <form class="searchbar">
           <input type="text" placeholder="Search" />
         </form>
       </div>
-      <div class="top-bar">
+
+      <div class="bottom-bar-header">
         <p>SALE! Up to 50% off</p>
       </div>
     </header>
@@ -44,7 +43,6 @@
     <main>
       <h3 id="top-text">Home > Clothing > Jackets Men > Fleece</h3>
       <div class="main_container">
-        
         <div class="product-container">
           <div class="fleece fleece4 product">
             <img src="images/product1.png" alt="jacket" />
@@ -61,9 +59,11 @@
         </div>
 
         <div class="product-info-container">
-          <div class="product-header"><h2>Patagonia</h2>
-          <p>Better Sweater Fleece Jacket - Men's</p>
-          <p><span class="price">599,-</span> <s>1199,-</s></p></div>
+          <div class="product-header">
+            <h2>Patagonia</h2>
+            <p>Better Sweater Fleece Jacket - Men's</p>
+            <p><span class="price">599,-</span> <s>1199,-</s></p>
+          </div>
 
           <div class="color_choice">
             <h3>Select Color</h3>
@@ -85,81 +85,82 @@
             <a href="bag.html">ADD TO BAG</a>
           </div>
           <div class="product-info">
-            <p>Warm and comfortable jacket, with a clean look. 
-            This Patagonia Fleece Jacket strikes the right balance with a lightweight, 
-            low-profile design that packs the heat with a soft feel.</p>
+            <p>
+              Warm and comfortable jacket, with a clean look. This Patagonia Fleece Jacket strikes
+              the right balance with a lightweight, low-profile design that packs the heat with a
+              soft feel.
+            </p>
             <ul>
-                <li>Soft</li>
-                <li>Full-zip polyester jacket</li>
-                <li>Warm </li>
-                <li>Durable</li>
+              <li>Soft</li>
+              <li>Full-zip polyester jacket</li>
+              <li>Warm</li>
+              <li>Durable</li>
             </ul>
           </div>
         </div>
-      </div> 
+      </div>
 
-        <h2 class="heading-suggestions">YOU MIGHT ALSO LIKE</h2>
+      <h2 class="heading-suggestions">YOU MIGHT ALSO LIKE</h2>
       <div class="product-suggestions">
-      <div class="product product-2">
-        <a href="product.html"
-          ><img class="product_img" src="images/product2.png" alt="product2"
-        /></a>
-        <h3>First Watch</h3>
-        <p>Ac-1100 Flotation Coat - Men's</p>
-        <p>1999,-</p> 
+        <div class="product product-2">
+          <a href="product.html"
+            ><img class="product_img" src="images/product2.png" alt="product2"
+          /></a>
+          <h3>First Watch</h3>
+          <p>Ac-1100 Flotation Coat - Men's</p>
+          <p>1999,-</p>
+        </div>
+        <div class="product product3">
+          <a href="product.html"
+            ><img class="product_img" src="images/Product3.png" alt="product3"
+          /></a>
+          <h3>Scott</h3>
+          <p>Endurance WB jacket - Woman's</p>
+          <p>999,-</p>
+        </div>
+        <div class="product product4">
+          <a href="product.html"
+            ><img class="product_img" src="images/product4.png" alt="product4"
+          /></a>
+          <h3>XM</h3>
+          <p>Yacht Jacket - Unisex</p>
+          <p><span class="price">499,-</span> <s>999,-</s></p>
+        </div>
+        <div class="product product-5">
+          <a href="product.html"
+            ><img class="product_img" src="images/product5.png" alt="product5"
+          /></a>
+          <h3>Swix</h3>
+          <p>Focus Jacket - Softshell - Woman's</p>
+          <p><span class="price">599</span> <s>1199,-</s></p>
+        </div>
       </div>
-      <div class="product product3">
-        <a href="product.html" 
-          ><img class="product_img" src="images/Product3.png" alt="product3"
-        /></a>
-        <h3>Scott</h3>
-        <p>Endurance WB jacket - Woman's</p>
-        <p>999,-</p> 
-      </div>
-      <div class="product product4">
-        <a href="product.html"
-          ><img class="product_img" src="images/product4.png" alt="product4"
-        /></a>
-        <h3>XM</h3>
-        <p>Yacht Jacket - Unisex</p>
-        <p><span class="price">499,-</span> <s>999,-</s></p> 
-      </div>
-      <div class="product product-5">
-        <a href="product.html"
-          ><img class="product_img" src="images/product5.png" alt="product5"
-        /></a>
-        <h3>Swix</h3>
-        <p>Focus Jacket - Softshell - Woman's</p>
-        <p><span class="price">599</span> <s>1199,-</s></p> 
-      </div></div>
-      
     </main>
 
     <footer>
-      <div class="container">
-        <div class="img"><img src="images/logo2.png" alt="logo2" /></div>
+      <img src="images/rainydays-logo2.png" id="logo2" alt="logo2" />
 
-        <div class="service">
-          <h4>COSTUMER SERVICE</h4>
-          <ul>
-            <li><a href="shoppingdelivery.html">Shopping & Delivery</a></li>
-            <li><a href="returnpolicy.html">Return Policy</a></li>
-            <li><a href="help.html">Help</a></li>
-          </ul>
-        </div>
+      <div class="about-us-container">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li><a href="thisisrainydays.html">This is RainyDays</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
 
-        <div class="about">
-          <h4>ABOUT US</h4>
-          <ul>
-            <li><a href="thisisrainydays.html">This is RainyDays</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="privacypolicy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="socials">
-          <img src="images/Facebook_icon.png" alt="facebook" />
-          <img src="images/Instagram_icon.png" alt="instagram" />
-        </div>
+      <div class="costumer-service-container">
+        <h3>COSTUMER SERVICE</h3>
+        <ul>
+          <li><a href="shoppingdelivery.html">Shopping & Delivery</a></li>
+          <li><a href="returnpolicy.html">Return Policy</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <img src="images/facebook-icon.png" alt="facebook" />
+        <img src="images/instagram-icon.png" alt="instagram" />
       </div>
     </footer>
   </body>

@@ -4,27 +4,24 @@
   <head>
     <title>Home | RainyDays</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/b318972c4d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
     <header>
-      <div class="header">
+      <div class="header-container">
         <input type="checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="hamburger_icon"
-          ><i class="fas fa-bars"></i
-        ></label>
-        <a href="index.html" id="logo"
-          ><img id="logo" src="images/rainydays-logo1.png" alt="logo-header"
-        /></a>
+        <label for="menu-checkbox" class="hamburger_icon">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <a href="index.html" id="logo">
+          <img id="logo" src="images/rainydays-logo1.png" alt="logo-header" />
+        </a>
+
         <nav>
           <ul>
             <li><a href="products.html">Clothing</a></li>
@@ -32,11 +29,13 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
         <form class="searchbar">
           <input type="text" placeholder="Search" />
         </form>
       </div>
-      <div class="top-bar">
+
+      <div class="bottom-bar-header">
         <p>SALE! Up to 50% off</p>
       </div>
     </header>
@@ -82,12 +81,8 @@
       </section>
 
       <div class="categories_mobile">
-        <a href="products.html"
-          ><img src="images/category-men.jpg" alt="Men"
-        /></a>
-        <a href="products.html"
-          ><img src="images/category-women.jpg" alt="Women"
-        /></a>
+        <a href="products.html"><img src="images/category-men.jpg" alt="Men" /></a>
+        <a href="products.html"><img src="images/category-women.jpg" alt="Women" /></a>
       </div>
 
       <section>
@@ -95,7 +90,7 @@
           <h3 class="scott_text">NEW arrivals from SCOTT</h3>
           <div class="scott_product">
             <p class="scott-price">999,-</p>
-            <img src="images/product6.png" /> 
+            <img src="images/product6.png" />
           </div>
           <div class="scott_product">
             <p class="scott-price">999,-</p>
@@ -110,30 +105,29 @@
     </main>
 
     <footer>
-      <div class="container">
-        <div class="img"><img src="images/rainydays-logo2.png" alt="logo2" /></div>
+      <img src="images/rainydays-logo2.png" id="logo2" alt="logo2" />
 
-        <div class="service">
-          <h4>COSTUMER SERVICE</h4>
-          <ul>
-            <li><a href="shoppingdelivery.html">Shopping & Delivery</a></li>
-            <li><a href="returnpolicy.html">Return Policy</a></li>
-            <li><a href="help.html">Help</a></li>
-          </ul>
-        </div>
+      <div class="about-us-container">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li><a href="thisisrainydays.html">This is RainyDays</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
 
-        <div class="about">
-          <h4>ABOUT US</h4>
-          <ul>
-            <li><a href="thisisrainydays.html">This is RainyDays</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="privacypolicy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="socials">
-          <img src="images/facebook-icon.png" alt="facebook" />
-          <img src="images/instagram-icon.png" alt="instagram" />
-        </div>
+      <div class="costumer-service-container">
+        <h3>COSTUMER SERVICE</h3>
+        <ul>
+          <li><a href="shoppingdelivery.html">Shopping & Delivery</a></li>
+          <li><a href="returnpolicy.html">Return Policy</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <img src="images/facebook-icon.png" alt="facebook" />
+        <img src="images/instagram-icon.png" alt="instagram" />
       </div>
     </footer>
   </body>
