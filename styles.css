@@ -482,7 +482,7 @@ td {
   color: white;
   font-size: 24px;
   font-weight: 900;
-  padding: 20px 56px;
+  padding: 20px 48px;
   max-height: 30px;
 }
 
@@ -523,6 +523,11 @@ td {
 .checkoutsuccess-container p {
   text-align: center;
   max-width: 350px;
+  margin: 0px;
+}
+
+.checkoutsuccess-container h1 {
+  text-align: center;
   margin: 0px;
 }
 
