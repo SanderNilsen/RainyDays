@@ -42,48 +42,43 @@
 
     <main>
       <div class="checkout-container">
-        <h1>Delivery & Payment</h1>
+        <h1 class="theme-color">Delivery & Payment</h1>
         <p>Fields maked with (*) must be completed.</p>
 
-        
-        <img src="images/Step1-Icon.png"> 
-        <h2>Delivery details</h2>
-        <form>
-          <div><input placeholder="First Name*" type="text" /></div>
-          <div><input placeholder="Last Name*" type="text" /></div>
-          <div><input placeholder="Address*" type="text" /></div>
-          <div><input placeholder="E-Mail*" type="text" /></div>
+        <h2 class="theme-color"><img class="checkout-icon" src="images/Step1-Icon.png" /> Delivery details</h2>
+        <form class="checkout-form">
+          <div><input class="input-style" placeholder="First Name*" type="text" /></div>
+          <div><input class="input-style" placeholder="Last Name*" type="text" /></div>
+          <div><input class="input-style" placeholder="Address*" type="text" /></div>
+          <div><input class="input-style" placeholder="E-Mail*" type="text" /></div>
         </form>
 
-        <img src="images/Step2-Icon.png"> 
-        <h2>Shipping</h2>
+        <h2 class="theme-color"><img class="checkout-icon" src="images/Step2-Icon.png" /> Shipping</h2>
         <form>
           <div>
             <input type="radio" id="Pickup" name="shipping" checked />
-            <label for="pickup">Pickup in store (0,-)</label>
+            <label class="theme-color" for="pickup">Pickup in store (0,-)</label>
           </div>
           <div>
             <input type="radio" id="home-delivery" name="shipping" />
-            <label for="home-delivery">Home delivery (99,-)</label>
+            <label class="theme-color" for="home-delivery">Home delivery (99,-)</label>
           </div>
         </form>
 
-        <img src="images/Step3-Icon.png"> 
-        <h2>Payment</h2>
+        <h2 class="theme-color"><img class="checkout-icon" src="images/Step3-Icon.png" /> Payment</h2>
         <form>
-            <div>
-              <input type="radio" id="vipps" name="payment" checked />
-              <label for="vipps">Vipps (0,-)</label>
-            </div>
-            <div>
-              <input type="radio" id="invoice" name="payment" />
-              <label for="invoice">Invoice (79,-)</label>
-            </div>
-          </form>
+          <div>
+            <input type="radio" id="vipps" name="payment" checked />
+            <label class="theme-color" for="vipps">Vipps (0,-)</label>
+          </div>
+          <div>
+            <input type="radio" id="invoice" name="payment" />
+            <label class="theme-color" for="invoice">Invoice (79,-)</label>
+          </div>
+        </form>
 
         <a class="button checkoutsuccess-button" href="checkoutsuccess.html">PAY (599,-)</a>
       </div>
-
     </main>
 
     <footer>

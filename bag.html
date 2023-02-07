@@ -42,7 +42,7 @@
 
     <main>
       <h2 id="top-text">Your bag (1)</h2>
-      <div class="bag">
+      <div class="bag-container">
         <div class="product1">
           <img class="product_img" src="images/Product1.png" alt="product1" />
           <div class="informations">
@@ -52,23 +52,26 @@
           </div>
         </div>
 
-        <div class="prices">
-          <div>
-            <h3>Total</h3>
-            <p>Subtotal</p>
-            <p>Delivery</p>
-            <p class="border">Total (VAT included)</p>
-          </div>
-          <div class="total">
-            <p>599,-</p>
-            <p>0,-</p>
-            <p class="border">599,-</p>
-          </div>
-
-            <a class="button" href="checkout.html">GO TO CHECKOUT</a>
-            
+        <div class="total-table-container">
+          <table class="total-table">
+            <tr>
+              <th><h2>Total</h2></th>
+            </tr>
+            <tr>
+              <td>Subtotal</td>
+              <td>599,-</td>
+            </tr>
+            <tr>
+              <td>Delivery</td>
+              <td>0,-</td>
+            </tr>
+            <tr>
+              <td class="border">Total (VAT included)</td>
+              <td class="border">599,-</td>
+            </tr>
+          </table>
+          <a class="button" href="checkout.html">GO TO CHECKOUT</a>
         </div>
-
       </div>
     </main>
 
