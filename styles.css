@@ -461,16 +461,17 @@ footer a {
   border-top: 1px solid;
 }
 
-th, td {
-padding-bottom: 20px;
-padding-right: 60px;
-text-align: left;
+th,
+td {
+  padding-bottom: 20px;
+  padding-right: 60px;
+  text-align: left;
 }
 .total-table-container {
   margin-bottom: 30px;
 }
 .total-table {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -509,7 +510,7 @@ margin-bottom: 30px;
   border: 1px solid;
   border-radius: 8px;
   border-color: gray;
-  width: 283px;
+  width: 265px;
   padding: 10px;
 }
 
@@ -530,13 +531,55 @@ margin-bottom: 30px;
 }
 
 .checkout-icon {
-  width:25px;
-  height:25px;
-  vertical-align: top;}
+  width: 25px;
+  height: 25px;
+  vertical-align: top;
+}
 
 .theme-color {
-  color:#0a3641;
+  color: #0a3641;
   align-content: center;
+}
+
+.padding0 {
+  padding: 0px;
+}
+
+.bottom-border {
+  border-bottom: 2px solid;
+  color: #0a3641;
+}
+
+/* About */
+
+.main-about-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-container {
+  max-width: 368px;
+  line-height: 1.6;
+}
+
+/* Contact */
+
+.contact-container {
+  display: grid;
+  justify-content: center;
+
+}
+
+.contact-form {
+  margin-bottom: 30px;
+}
+
+.contact {
+  max-width: 289px;
 }
 
 /* Media */
