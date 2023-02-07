@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger_icon">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <a href="index.html" id="logo">
+          <img id="logo" src="images/rainydays-logo1.png" alt="logo-header" />
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="products.html">Clothing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <form>
+          <input class="searchbar" type="text" placeholder="Search" />
+        </form>
+      </div>
+
+      <div class="bottom-bar-header">
+        <p>SALE! Up to 50% off</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="checkout-container">
+        <h1>Delivery & Payment</h1>
+        <p>Fields maked with (*) must be completed.</p>
+
+        
+        <img src="images/Step1-Icon.png"> 
+        <h2>Delivery details</h2>
+        <form>
+          <div><input placeholder="First Name*" type="text" /></div>
+          <div><input placeholder="Last Name*" type="text" /></div>
+          <div><input placeholder="Address*" type="text" /></div>
+          <div><input placeholder="E-Mail*" type="text" /></div>
+        </form>
+
+        <img src="images/Step2-Icon.png"> 
+        <h2>Shipping</h2>
+        <form>
+          <div>
+            <input type="radio" id="Pickup" name="shipping" checked />
+            <label for="pickup">Pickup in store (0,-)</label>
+          </div>
+          <div>
+            <input type="radio" id="home-delivery" name="shipping" />
+            <label for="home-delivery">Home delivery (99,-)</label>
+          </div>
+        </form>
+
+        <img src="images/Step3-Icon.png"> 
+        <h2>Payment</h2>
+        <form>
+            <div>
+              <input type="radio" id="vipps" name="payment" checked />
+              <label for="vipps">Vipps (0,-)</label>
+            </div>
+            <div>
+              <input type="radio" id="invoice" name="payment" />
+              <label for="invoice">Invoice (79,-)</label>
+            </div>
+          </form>
+
+        <a class="button checkoutsuccess-button" href="checkoutsuccess.html">PAY (599,-)</a>
+      </div>
+
+    </main>
+
+    <footer>
+      <img src="images/rainydays-logo2.png" id="logo2" alt="logo2" />
+
+      <div class="about-us-container">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li><a href="thisisrainydays.html">This is RainyDays</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="costumer-service-container">
+        <h3>COSTUMER SERVICE</h3>
+        <ul>
+          <li><a href="shoppingdelivery.html">Shopping & Delivery</a></li>
+          <li><a href="returnpolicy.html">Return Policy</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <img src="images/facebook-icon.png" alt="facebook" />
+        <img src="images/instagram-icon.png" alt="instagram" />
+      </div>
+    </footer>
+  </body>
+</html>

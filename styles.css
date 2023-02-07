@@ -63,7 +63,7 @@ a:hover {
   color: #175868;
 }
 
-input[type="text"] {
+.searchbar {
   padding: 10px;
   border: none;
   border-radius: 18px;
@@ -473,7 +473,7 @@ footer a {
   margin-top: 20px;
 }
 
-.CHECKOUT-button {
+.button {
   background-color: #0a3641;
   justify-self: center;
   border-radius: 10px;
@@ -486,10 +486,32 @@ footer a {
   padding: 20px 86px;
 }
 
-.CHECKOUT-button:hover {
+.button:hover {
   transition: 0.2s all ease-in-out;
   background-color: #175868;
   color: white;
+}
+
+/* Checkout */
+
+.checkout-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.checkoutsuccess-container {
+  justify-items: center;
+  gap: 30px;
+}
+.checkoutsuccess-container p {
+  text-align: center;
+  max-width: 350px;
+  margin: 0px;
+}
+
+.checkoutsuccess-button {
+  margin-top: 30px;
 }
 
 /* Media */
@@ -498,7 +520,7 @@ footer a {
   /* Mobile header */
 
   nav,
-  form {
+  .searchbar {
     display: none;
   }
 
