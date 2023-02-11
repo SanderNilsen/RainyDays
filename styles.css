@@ -27,6 +27,7 @@ header {
   justify-content: space-evenly;
   background-color: white;
   padding: 20px;
+  gap: 40px;
 }
 
 #logo {
@@ -46,10 +47,16 @@ header {
   margin: 0;
 }
 
+nav {
+  left: 60px;
+  position: relative;
+}
+
 nav ul {
   display: flex;
   list-style: none;
   gap: 40px;
+  padding: 0px;
 }
 
 nav a {
@@ -68,6 +75,18 @@ a:hover {
   border: none;
   border-radius: 18px;
   background-color: lightgray;
+}
+
+.nav-right {
+  display: flex;
+  gap: 30px;
+  left: 40px;
+  position: relative;
+}
+
+.nav-right img {
+  width: 31px;
+  height: 31px;
 }
 
 /* Main */
@@ -123,13 +142,7 @@ main {
   justify-content: center;
 }
 
-
 .category:hover {
-  transition: 0.2s all ease-in-out;
-  transform: scale(1.05);
-}
-
-.scott-img:hover  {
   transition: 0.2s all ease-in-out;
   transform: scale(1.05);
 }
@@ -189,7 +202,12 @@ main {
   width: 20px;
 }
 
-.scott_container {
+.scott-product:hover {
+  transition: 0.2s all ease-in-out;
+  transform: scale(1.05);
+}
+
+.scott-container {
   display: grid;
   grid-template-columns: repeat(4, auto);
   padding: 50px;
@@ -210,14 +228,14 @@ main {
   max-width: 195px;
 }
 
-.scott_product {
+.scott-product {
   background-color: #175868;
   border-radius: 50%;
   width: 235px;
   height: 235px;
 }
 
-.scott_product img {
+.scott-img {
   width: 180px;
   height: 200px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -308,8 +326,6 @@ footer a {
 
 .product {
   max-width: 157px;
-  min-width: 157px;
-  max-height: 400px;
 }
 
 .product_img {
@@ -331,6 +347,7 @@ footer a {
 
 .price {
   color: red;
+  font-weight: 900;
 }
 
 /* Product-Page */
@@ -359,7 +376,6 @@ footer a {
   grid-template-rows: repeat(6, auto);
   gap: 20px;
   margin-top: 20px;
-
 }
 
 .product-info-container h3 {
@@ -483,8 +499,8 @@ td {
   margin-bottom: 30px;
 }
 
-.margin0{
-  margin:0px;
+.margin0 {
+  margin: 0px;
 }
 
 .button {
@@ -578,7 +594,7 @@ td {
   gap: 30px;
   margin-top: 30px;
   margin-bottom: 50px;
-  padding-left:50px;
+  padding-left: 50px;
   padding-right: 50px;
 }
 
@@ -604,7 +620,7 @@ td {
   max-width: 289px;
 }
 
-.input-message{
+.input-message {
   padding-bottom: 100px;
 }
 
@@ -645,12 +661,18 @@ td {
     display: block;
   }
 
+  .nav-right {
+    justify-self: right;
+    left: 0px;
+  }
+
   nav {
     position: absolute;
     background: white;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
     top: 112px;
     left: 0px;
+    padding-left: 0px;
   }
 
   nav ul {
@@ -668,7 +690,7 @@ td {
     display: none;
   }
 
-  .scott_container {
+  .scott-container {
     grid-template-columns: repeat(2, auto);
   }
 
@@ -676,14 +698,14 @@ td {
     font-size: 36px;
   }
 
-  .scott_product {
+  .scott-product {
     background-color: #175868;
     border-radius: 50%;
     width: 180px;
     height: 180px;
   }
 
-  .scott_product img {
+  .scott-product img {
     width: 130px;
     height: 150px;
   }
