@@ -30,7 +30,7 @@ header {
   gap: 40px;
 }
 
-#logo {
+.logo-img {
   width: 119px;
   height: 53px;
 }
@@ -652,7 +652,7 @@ td {
     display: contents;
   }
 
-  #logo {
+  .logo {
     grid-column: 2;
     justify-self: center;
   }
