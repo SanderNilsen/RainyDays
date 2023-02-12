@@ -603,6 +603,12 @@ td {
   line-height: 1.6;
 }
 
+.location-container, ul, li {
+  list-style: none;
+  padding: 0px;
+  line-height: 1.6;
+}
+
 /* Contact */
 
 .contact-container {
