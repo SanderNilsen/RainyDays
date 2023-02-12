@@ -147,7 +147,7 @@ main {
   transform: scale(1.05);
 }
 
-#rectangle {
+.rectangle {
   background-color: #175868;
   min-height: 50px;
   grid-row: 2;
@@ -773,7 +773,7 @@ td {
     grid-row: 1;
   }
 
-  #rectangle {
+  .rectangle {
     grid-column: 1/5;
     grid-row: 1;
   }
