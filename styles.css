@@ -425,20 +425,23 @@ footer a {
   margin-right: 5px;
 }
 
-.addtobag-button {
+.button {
   background-color: #0a3641;
-  justify-self: center;
   border-radius: 10px;
   text-align: center;
-  padding: 20px 0px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 24px;
   font-weight: 900;
+  padding: 20px 48px;
+  max-height: 30px;
+}
+
+.addtobag-button {
   padding: 20px 86px;
 }
 
-.addtobag-button:hover {
+.button:hover {
   transition: 0.2s all ease-in-out;
   background-color: #175868;
   color: white;
@@ -503,23 +506,6 @@ td {
   margin: 0px;
 }
 
-.button {
-  background-color: #0a3641;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 24px;
-  font-weight: 900;
-  padding: 20px 48px;
-  max-height: 30px;
-}
-
-.button:hover {
-  transition: 0.2s all ease-in-out;
-  background-color: #175868;
-  color: white;
-}
 
 /* Checkout */
 
