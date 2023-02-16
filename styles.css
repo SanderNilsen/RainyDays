@@ -349,10 +349,11 @@ footer a {
   transform: scale(1.1);
 }
 
-#top-text {
+.top-main-nav {
   color: #0a3641;
   display: flex;
   padding-left: 40px;
+  gap:10px;
 }
 
 .price {
@@ -706,7 +707,7 @@ td {
   }
 
   /* Mobile product-page */
-  #top-text {
+  .top-main-nav {
     display: none;
   }
 
