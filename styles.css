@@ -104,10 +104,14 @@ a:hover {
   margin: 0px;
 }
 
-/* Main */
+/* Main index */
 
 main img {
   max-width: 100%;
+}
+
+.main-mountain-background {
+  filter: brightness(80%);
 }
 
 main {
