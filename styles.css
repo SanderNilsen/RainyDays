@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  line-height: 1.6;
+  list-style: none;
+  padding: 0px;
 }
 
 /* Header */
@@ -24,10 +30,20 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: white;
   padding: 20px;
-  gap: 40px;
+  gap: 30px;
+}
+
+.logo,
+nav,
+.nav-right {
+  flex: 1;
+}
+
+.logo {
+  padding-left: 20px;
 }
 
 .logo-img {
@@ -40,22 +56,14 @@ header {
   display: none;
 }
 
-.bottom-bar-header p {
-  background-color: #0a3641;
-  color: white;
-  text-align: center;
-  margin: 0;
-}
-
 nav {
-  left: 60px;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
-  gap: 40px;
+  gap: 30px;
   padding: 0px;
 }
 
@@ -79,14 +87,21 @@ a:hover {
 
 .nav-right {
   display: flex;
-  gap: 30px;
-  left: 40px;
-  position: relative;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 20px;
 }
 
 .nav-right img {
   width: 31px;
   height: 31px;
+}
+
+.bottom-bar-header p {
+  background-color: #0a3641;
+  color: white;
+  text-align: center;
+  margin: 0px;
 }
 
 /* Main */
@@ -220,7 +235,7 @@ main {
 }
 
 .scott_text {
-  margin: 0;
+  margin: 0px;
   color: #0a3641;
   font-size: 46px;
   font-weight: bolder;
@@ -296,11 +311,6 @@ footer {
   width: 30.73px;
   height: 30px;
   padding: 10px;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0px;
 }
 
 footer li {
@@ -407,11 +417,6 @@ footer a {
   transform: scale(0.8);
 }
 
-.sizes {
-  list-style: none;
-  padding: 0px;
-}
-
 .sizes li {
   display: inline;
 }
@@ -448,7 +453,8 @@ footer a {
 }
 
 .product-info ul {
-  padding: 0px 0px 0px 20px;
+  padding-left: 20px;
+  list-style:disc;
 }
 
 .heading-suggestions {
@@ -505,7 +511,6 @@ td {
 .margin0 {
   margin: 0px;
 }
-
 
 /* Checkout */
 
@@ -589,12 +594,6 @@ td {
   line-height: 1.6;
 }
 
-.location-container, ul, li {
-  list-style: none;
-  padding: 0px;
-  line-height: 1.6;
-}
-
 /* Contact */
 
 .contact-container {
@@ -647,6 +646,7 @@ td {
   .logo {
     grid-column: 2;
     justify-self: center;
+    padding: 0px;
   }
 
   #menu-checkbox:checked ~ nav {
@@ -654,8 +654,7 @@ td {
   }
 
   .nav-right {
-    justify-self: right;
-    left: 0px;
+    padding: 0px;
   }
 
   nav {
