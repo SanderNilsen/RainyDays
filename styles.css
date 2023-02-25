@@ -660,6 +660,25 @@ legend {
   padding-bottom: 100px;
 }
 
+.contact-button {
+  border: 0px;
+  padding: 0px;
+  height: 60px;
+  background-color: #0a3641;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  transition: 0.2s all ease-in-out;
+  background-color: #175868;
+  color: white;
+}
 /* Media */
 
 @media (max-width: 870px) {
