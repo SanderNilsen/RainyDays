@@ -106,6 +106,10 @@ a:hover {
 
 /* Main index */
 
+h1 {
+font-size: 28px;
+}
+
 main img {
   max-width: 100%;
 }
