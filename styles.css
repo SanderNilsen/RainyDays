@@ -547,9 +547,27 @@ color:#0a3641;
   margin-top: 30px;
 }
 .checkout-form {
-  gap: 10px;
   display: flex;
   flex-direction: column;
+  gap:20px;
+}
+
+fieldset {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  gap: 10px;
+  display: flex;
+  flex-direction:column;
+}
+
+legend {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.checkout-submit{
+  display: none;
 }
 
 .input-style {
@@ -558,6 +576,7 @@ color:#0a3641;
   border-color: gray;
   width: 265px;
   padding: 10px;
+  display: block;
 }
 
 .checkoutsuccess-container {
