@@ -23,8 +23,11 @@ ul {
 /* Header */
 
 header {
-  position: relative;
+  position: sticky;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  top: 0;
+  z-index: 1;
+
 }
 
 .header-container {
