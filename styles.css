@@ -625,6 +625,10 @@ legend {
   line-height: 1.6;
 }
 
+.map {
+  border-style:none;
+}
+
 /* Contact */
 
 .contact-container {
