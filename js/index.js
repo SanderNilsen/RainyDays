@@ -17,17 +17,27 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
       productImage.classList.add('scott-img');
       productImage.src = product.image;
       productImage.alt = 'Sale_Product';
+
+      const productTitle = document.createElement('h3');
+      productTitle.classList.add('scott-title');
+      productTitle.textContent = product.title;
       
       const priceParagraph = document.createElement('p');
       priceParagraph.classList.add('scott-price');
       priceParagraph.textContent = product.price;
+
+      const discountedPriceParagraph = document.createElement('p');
+      discountedPriceParagraph.classList.add('scott-discountedPrice');
+      discountedPriceParagraph.textContent = product.discountedPrice;
 
       const productLink = document.createElement('a');
       productLink.href = `product.html?id=${product.id}`;
       productLink.textContent = 'View Details';
 
       productDiv.appendChild(productImage);
+      productDiv.appendChild(productTitle);
       productDiv.appendChild(priceParagraph);
+      productDiv.appendChild(discountedPriceParagraph);
       productDiv.appendChild(productLink);
 
       container.appendChild(productDiv);

@@ -257,8 +257,8 @@ main {
   background-color: #175868;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  padding: 50px;
-  gap: 50px;
+  padding: 90px;
+  grid-gap: 50px;
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -274,31 +274,47 @@ main {
   font-weight: bolder;
   text-align: center;
   max-width: 195px;
+  align-self: start;
+  font-style: italic;
 }
 
 .scott-img {
   width: 180px;
   height: 200px;
+  border-radius: 5%;
 }
 
 .scott-product {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  width: max-content;
+  width: 180px;
+  gap:5px;
 }
 
 .scott-product a {
  color: #ffffff;
  align-self: start;
+ margin-top: 10px;
 }
 
 .scott-price {
-  font-size: xx-large;
-  font-weight: bolder;
-  color: white;
+  text-decoration-line: line-through;
+  color:white;
+  font-size: large;
   margin: 0px;
 }
+
+.scott-discountedPrice {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgb(255, 157, 157);
+  margin: 0px;
+}
+
+.scott-title{
+  color:white;
+}
+
 /* Footer */
 
 footer {
@@ -804,13 +820,19 @@ legend {
     font-size: 36px;
   }
 
+  .scott-product {
+    width: 130px;
+    height: 350px;
+    gap: 0px;
+  }
+
   .scott-product img {
     width: 130px;
     height: 150px;
   }
 
   .scott-price {
-    font-size: x-large;
+    font-size: large;
     display: flex;
     align-self: start;
   }
