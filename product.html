@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta name="description" content="Page of choosen product">
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+    <script src="js/product.js" defer></script>
   </head>
 
   <body>
@@ -40,7 +41,9 @@
             <label for="searchbar"></label>
             <input class="searchbar" id="searchbar" type="text" placeholder="Search" >
           </form>
-          <a href="bag.html"><img src="images/Bag-Icon.png" alt="Bag-Icon"></a>
+          <a href="bag.html"><img src="images/Bag-Icon.png" alt="Bag-Icon">
+            <span id="bag-count"></span> <!-- Placeholder for the item count -->
+          </a>
         </div>
       </div>
 
@@ -49,69 +52,35 @@
       </div>
     </header>
 
-    <main>
-      <h3 class="top-main-nav">
-        <a class="theme-color" href="index.html">Home </a> >
-        <a class="theme-color" href="products.html">Clothing</a> >
-        <a class="theme-color" href="product.html">Fleece</a>
-      </h3>
-
-      <section class="main-product-container">
-        <div class="product-container">
-          <div class="product">
-            <img class="product_img" src="images/product1.png" alt="jacket" >
-          </div>
-          <div class="product product1-zoom-top">
-            <img class="product_img" src="images/product1-zoom-top.png" alt="jacket" >
-          </div>
-          <div class="product product1-zoom-bottom">
-            <img class="product_img" src="images/product1-zoom-bottom.png" alt="jacket" >
-          </div>
-          <div class="product product1-zoom-left">
-            <img class="product_img" src="images/product1-zoom-left.png" alt="jacket" >
-          </div>
+    <section class="main-product-container">
+      <div class="product-container">
+        <div class="product">
+          <img class="product_img" id="productImage" src="" alt="" >
         </div>
-
-        <div class="product-info-container">
-          <div class="product-header">
-            <h1 class="margin0">Patagonia</h1>
-            <p>Better Sweater Fleece Jacket - Men's</p>
-            <p><span class="price">599,-</span> <s>1199,-</s></p>
-          </div>
-
-          <div class="color_choice">
-            <h3>Select Color</h3>
-            <button class="color_button blue"></button>
-            <button type="button" class="color_button olive"></button>
-          </div>
-
-          <div class="size-list">
-            <h3>Select Size</h3>
-            <ul class="sizes">
-              <li class="size">XS</li>
-              <li class="size">S</li>
-              <li class="size">M</li>
-              <li class="size">L</li>
-              <li class="size">XL</li>
-            </ul>
-          </div>
-
-          <a class="addtobag-button button" href="bag.html">ADD TO BAG</a>
-
-          <div class="product-info">
-            <p>
-              Warm and comfortable jacket, with a clean look. This Patagonia Fleece Jacket strikes the right balance
-              with a lightweight, low-profile design that packs the heat with a soft feel.
-            </p>
-            <ul>
-              <li>Soft</li>
-              <li>Full-zip polyester jacket</li>
-              <li>Warm</li>
-              <li>Durable</li>
-            </ul>
-          </div>
+        <!-- Other product images -->
+      </div>
+    
+      <div class="product-info-container">
+        <div class="product-header">
+          <h1 class="margin0" id="productName"></h1>
+          <p id="productDescription"></p>
+          <p><span class="price" id="productPrice"></span> <s id="productRegularPrice"></s></p>
         </div>
-      </section>
+    
+        <div id="productColor">
+          <!-- Color choices (if applicable) -->
+        </div>
+    
+        <div id="productSizes">
+          <!-- Size options (if applicable) -->
+        </div>
+        
+        <div class="product-info">
+          <p id="productDetails"></p>
+          <ul id="productFeatures"></ul>
+        </div>
+      </div>
+    </section>
 
       <h2 class="heading-suggestions">YOU MIGHT ALSO LIKE</h2>
       <section class="product-suggestions">

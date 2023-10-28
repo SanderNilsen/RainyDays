@@ -1,34 +1,53 @@
-// Fetch request to the API
+// Define constants and variables
+const slider = document.querySelector(".slider");
+const images = document.querySelectorAll(".slider img");
+const container = document.querySelector('.sale-container');
+
+let currentIndex = 0;
+
+// Function to move to the next slide
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlider();
+}
+
+// Function to update the slider position
+function updateSlider() {
+    const translateX = -currentIndex * 100;
+    slider.style.transform = 'translateX(' + translateX + '%)';
+}
+
+// Automatically switch to the next slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Fetch data from the Noroff API
 fetch('https://api.noroff.dev/api/v1/rainy-days')
   .then(response => response.json())
   .then(data => {
-    // Select the container element
-    const container = document.querySelector('.scott-container');
-
-    // Filter products where "onsale" is true
+    // Filter products where "onSale" is true
     const onSaleProducts = data.filter(product => product.onSale === true);
 
-    // Populate HTML elements for on-sale products
+    // Create HTML elements for on-sale products
     onSaleProducts.forEach(product => {
       const productDiv = document.createElement('div');
-      productDiv.classList.add('scott-product');
+      productDiv.classList.add('sale-product');
 
       const productImage = document.createElement('img');
-      productImage.classList.add('scott-img');
+      productImage.classList.add('sale-img');
       productImage.src = product.image;
       productImage.alt = 'Sale_Product';
 
       const productTitle = document.createElement('h3');
-      productTitle.classList.add('scott-title');
+      productTitle.classList.add('sale-title');
       productTitle.textContent = product.title;
-      
+
       const priceParagraph = document.createElement('p');
-      priceParagraph.classList.add('scott-price');
-      priceParagraph.textContent = product.price;
+      priceParagraph.classList.add('sale-price');
+      priceParagraph.textContent = `${product.price} kr`;
 
       const discountedPriceParagraph = document.createElement('p');
-      discountedPriceParagraph.classList.add('scott-discountedPrice');
-      discountedPriceParagraph.textContent = product.discountedPrice;
+      discountedPriceParagraph.classList.add('sale-discountedPrice');
+      discountedPriceParagraph.textContent = `${product.discountedPrice} kr`;
 
       const productLink = document.createElement('a');
       productLink.href = `product.html?id=${product.id}`;
@@ -42,6 +61,7 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
 
       container.appendChild(productDiv);
     });
+
   })
   .catch(error => {
     console.error('Error fetching data:', error);

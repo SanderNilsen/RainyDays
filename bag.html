@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta name="description" content="Page of choosen product(s)">
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+    <script src="js/bag.js" defer></script>
   </head>
 
   <body>
@@ -40,7 +41,9 @@
             <label for="searchbar"></label>
             <input class="searchbar" id="searchbar" type="text" placeholder="Search" >
           </form>
-          <a href="bag.html"><img src="images/Bag-Icon.png" alt="Bag-Icon"></a>
+          <a href="bag.html"><img src="images/Bag-Icon.png" alt="Bag-Icon">
+            <span id="bag-count"></span> <!-- Placeholder for the item count -->
+          </a>
         </div>
       </div>
 
@@ -51,45 +54,12 @@
 
     <main>
       <h1 class="top-main-nav">Your bag (1)</h1>
-      <section class="bag-container">
-        <div class="product1">
-          <img class="product_img" src="images/Product1.png" alt="product1" >
-          <div class="informations">
-            <h3 class="margin0">Patagonia</h3>
-            <p>Better Sweater Fleece Jacket - Men's</p>
-            <p><span class="price">599,-</span> <s>1199,-</s></p>
-            <a href="index.html">
-              <p class="remove-item">x Remove</p>
-            </a>
-          </div>
-        </div>
-
-        <div class="total-table-container">
-          <table class="total-table">
-            <tr >
-              <th class="margin0">Total</th>
-            </tr>
-            <tr>
-              <td colspan="2">Subtotal</td>
-              <td >599,-</td>
-            </tr>
-            <tr>
-              <td colspan="2">Delivery</td>
-              <td>0,-</td>
-            </tr>
-            <tr>
-              <td colspan="2" class="border">Total (VAT included)</td>
-              <td class="border">599,-</td>
-            </tr>
-          </table>
-
-          <a class="button" href="checkout.html">GO TO CHECKOUT</a>
-          <div>
-            <a href="products.html">
-              <h3 class="continue-button"> &lt- Continue Shopping</h3>
-            </a>
-          </div>
-        </div>
+  <section class="bag-container">
+    <!-- Cart items will be added here using JavaScript -->
+  </section>
+  <div class="total-table-container">
+    <!-- Total table and other checkout options go here -->
+  </div>
         
       </section>
     </main>
