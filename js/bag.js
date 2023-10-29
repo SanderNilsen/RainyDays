@@ -27,7 +27,7 @@ cart.forEach(item => {
   const productDescription = document.createElement('p');
 
   const priceInfo = document.createElement('p');
-  priceInfo.innerHTML = `<span class="price">${item.discountedPrice} </span> <s>${item.regularPrice} </s>`;
+  priceInfo.innerHTML = `<span id="productDiscountedPrice">${item.discountedPrice} </span> <s id="productRegularPrice">${item.price} </s>`;
 
   const removeLink = document.createElement('button');
   // Add a click event to remove the item from the cart

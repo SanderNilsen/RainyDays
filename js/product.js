@@ -6,7 +6,7 @@ const productId = urlParams.get("id");
 const productImage = document.getElementById("productImage");
 const productName = document.getElementById("productName");
 const productDescription = document.getElementById("productDescription");
-const productDiscountedPrice = document.getElementById("productPrice");
+const productDiscountedPrice = document.getElementById("productDiscountedPrice");
 const productRegularPrice = document.getElementById("productRegularPrice");
 const productDetails = document.getElementById("productDetails");
 const productFeatures = document.getElementById("productFeatures");
@@ -91,8 +91,7 @@ fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
         productDiscountedPrice.textContent = `${product.discountedPrice} kr`;
         productRegularPrice.textContent = `${product.price} kr`;
       } else {
-        productDiscountedPrice.textContent = `${product.DiscountedPrice} kr`;
-        productRegularPrice.style.display = 'none';
+        productRegularPrice.style.display = `${product.price} kr`;
       }
 
     productDetails.textContent = product.description;
