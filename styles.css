@@ -511,8 +511,7 @@ footer a {
 
 /* Bag */
 .bag-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
   padding: 20px 40px;
   gap: 40px;
