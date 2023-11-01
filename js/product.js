@@ -26,7 +26,7 @@ addToBagButton.addEventListener("click", () => {
     id: productId,
     name: productName.textContent,
     price: productRegularPrice.textContent,
-    discountedPrice:productDiscountedPrice.textContent,
+    discountedPrice: productDiscountedPrice.textContent,
     image: productImage.src,
   };
 
@@ -88,11 +88,13 @@ fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
     });
 
     if (product.onSale) {
-        productDiscountedPrice.textContent = `${product.discountedPrice} kr`;
-        productRegularPrice.textContent = `${product.price} kr`;
-      } else {
-        productRegularPrice.style.display = `${product.price} kr`;
-      }
+      productDiscountedPrice.textContent = `${product.discountedPrice} kr`;
+      productRegularPrice.textContent = `${product.price} kr`;
+    } else {
+      productRegularPrice.textContent = `${product.price} kr`;
+      productRegularPrice.style.textDecoration = "none";
+      productDiscountedPrice.style.display = "none";
+    }
 
     productDetails.textContent = product.description;
   })

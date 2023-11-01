@@ -2,12 +2,10 @@
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
 const bagContainer = document.querySelector('.bag-container');
 
-// Select the <h1> element
-const bagTitle = document.querySelector('.top-main-nav');
 
 // Update the <h1> element to display the item count
+const bagTitle = document.querySelector('.top-main-nav');
 bagTitle.textContent = `Your bag (${cart.length})`;
-
 
 // Iterate through the cart items and create elements for each item
 cart.forEach(item => {

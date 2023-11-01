@@ -56,6 +56,11 @@ nav,
 
 #bag-count{
   color: #0a3641;
+  display: inline;
+}
+
+.bag-icon {
+  display: inherit;
 }
 
 /* Nav */

@@ -1,17 +1,17 @@
-// Define constants and variables
+//  Slider constants and variables
 const slider = document.querySelector(".slider");
 const images = document.querySelectorAll(".slider img");
 const container = document.querySelector('.sale-container');
 
 let currentIndex = 0;
 
-// Function to move to the next slide
+// Move to the next slide
 function nextSlide() {
     currentIndex = (currentIndex + 1) % images.length;
     updateSlider();
 }
 
-// Function to update the slider position
+// Update the slider position
 function updateSlider() {
     const translateX = -currentIndex * 100;
     slider.style.transform = 'translateX(' + translateX + '%)';
@@ -20,10 +20,9 @@ function updateSlider() {
 // Automatically switch to the next slide every 5 seconds
 setInterval(nextSlide, 5000);
 
-// Loading indicator element
+// Loading indicator
 const loadingIndicator = document.getElementById('loading-indicator');
-
-loadingIndicator.style.display = 'block'; // Show the loading indicator
+loadingIndicator.style.display = 'block'; 
 
 // Fetch data from the Noroff API
 fetch('https://api.noroff.dev/api/v1/rainy-days')
@@ -40,7 +39,7 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
       const productImage = document.createElement('img');
       productImage.classList.add('sale-img');
       productImage.src = product.image;
-      productImage.alt = 'Sale_Product';
+      productImage.alt = 'Sale-Product';
 
       const productTitle = document.createElement('h3');
       productTitle.classList.add('sale-title');
@@ -71,5 +70,5 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
   })
   .catch(error => {
     console.error('Error fetching data:', error);
-    loadingIndicator.style.display = 'none'; // Hide the loading indicator in case of an error
+    loadingIndicator.style.display = 'none';
   });
