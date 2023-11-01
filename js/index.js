@@ -20,6 +20,11 @@ function updateSlider() {
 // Automatically switch to the next slide every 5 seconds
 setInterval(nextSlide, 5000);
 
+// Loading indicator element
+const loadingIndicator = document.getElementById('loading-indicator');
+
+loadingIndicator.style.display = 'block'; // Show the loading indicator
+
 // Fetch data from the Noroff API
 fetch('https://api.noroff.dev/api/v1/rainy-days')
   .then(response => response.json())
@@ -62,7 +67,9 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
       container.appendChild(productDiv);
     });
 
+    loadingIndicator.style.display = 'none'; // Hide the loading indicator after the API call is complete
   })
   .catch(error => {
     console.error('Error fetching data:', error);
+    loadingIndicator.style.display = 'none'; // Hide the loading indicator in case of an error
   });
