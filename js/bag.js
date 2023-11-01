@@ -1,65 +1,69 @@
 // Get the cart items from local storage
-const cart = JSON.parse(localStorage.getItem('cart')) || [];
-const bagContainer = document.querySelector('.bag-container');
-
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+const bagContainer = document.querySelector(".bag-container");
 
 // Update the <h1> element to display the item count
-const bagTitle = document.querySelector('.top-main-nav');
+const bagTitle = document.querySelector(".top-main-nav");
 bagTitle.textContent = `Your bag (${cart.length})`;
 
 // Iterate through the cart items and create elements for each item
-cart.forEach(item => {
-  const productDiv = document.createElement('div');
-  productDiv.classList.add('product1');
+cart.forEach((item) => {
+  const productDiv = document.createElement("div");
+  productDiv.classList.add("product1");
 
-  const productImage = document.createElement('img');
-  productImage.classList.add('product_img');
-  productImage.src = item.image; 
+  const productImage = document.createElement("img");
+  productImage.classList.add("product_img");
+  productImage.src = item.image;
   productImage.alt = item.name;
 
-  const informationsDiv = document.createElement('div');
-  informationsDiv.classList.add('informations');
+  const informationsDiv = document.createElement("div");
+  informationsDiv.classList.add("informations");
 
-  const productName = document.createElement('p');
+  const productName = document.createElement("p");
 
-  const productDescription = document.createElement('p');
+  const productDescription = document.createElement("p");
 
-  const priceInfo = document.createElement('p');
+  const priceInfo = document.createElement("p");
   priceInfo.innerHTML = `<span id="productDiscountedPrice">${item.discountedPrice} </span> <s id="productRegularPrice">${item.price} </s>`;
 
-  const removeLink = document.createElement('button');
+  const removeLink = document.createElement("button");
   // Add a click event to remove the item from the cart
-  removeLink.addEventListener('click', () => {
+  removeLink.addEventListener("click", () => {
     // Find the index of the item in the cart
-    const index = cart.findIndex(cartItem => cartItem.id === item.id);
+    const index = cart.findIndex((cartItem) => cartItem.id === item.id);
     if (index !== -1) {
       // Remove the item from the cart
       cart.splice(index, 1);
 
       // Update the cart in local storage
-      localStorage.setItem('cart', JSON.stringify(cart));
+      localStorage.setItem("cart", JSON.stringify(cart));
 
       // Remove the item's element from the bag
       bagContainer.removeChild(productDiv);
 
       // Optionally, update the item count
       const itemCount = cart.length;
-      localStorage.setItem('itemCount', itemCount);
+      localStorage.setItem("itemCount", itemCount);
 
       // Optionally, update the item count displayed in the header
-      const itemCountElement = document.getElementById('bag-count');
+      const itemCountElement = document.getElementById("bag-count");
       if (itemCount > 0) {
         itemCountElement.textContent = itemCount;
       } else {
-        itemCountElement.textContent = '';
+        itemCountElement.textContent = "";
       }
     }
   });
 
+  // "Go to Checkout" button
+  const checkoutButton = document.getElementById("checkout-button");
+  checkoutButton.addEventListener("click", () => {
+    window.location.href = "checkout.html";
+  });
 
-  const removeText = document.createElement('p');
-  removeText.classList.add('remove-item');
-  removeText.textContent = 'x Remove';
+  const removeText = document.createElement("p");
+  removeText.classList.add("remove-item");
+  removeText.textContent = "x Remove";
 
   removeLink.appendChild(removeText);
 
