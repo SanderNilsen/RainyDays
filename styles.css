@@ -171,6 +171,11 @@ a:hover {
   animation: rotation 1s linear infinite;
   }
 
+  .loader, .productloader {
+    align-self:center;
+    position:absolute;
+  }
+
   @keyframes rotation {
   0% {
       transform: rotate(0deg);
@@ -550,7 +555,7 @@ footer a {
 }
 
 .informations {
-  max-width: 125px;
+  max-width: 138px;
 }
 
 .border {
@@ -592,6 +597,12 @@ button, .remove-item {
 
 .remove-item:hover {
   color:white;
+}
+
+.checkout-button {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* Checkout */
@@ -856,7 +867,7 @@ legend {
 
   /* Mobile product-page */
   .top-main-nav {
-    display: none;
+   padding-top: 20px;
   }
 
   .product1-zoom-top,

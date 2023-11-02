@@ -1,3 +1,8 @@
+// Loading indicator element
+const loadingIndicator = document.getElementById('loading-indicator');
+
+loadingIndicator.style.display = 'block'; // Show the loading indicator
+
 // Get the product ID from the URL query parameter
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
@@ -24,7 +29,7 @@ addToBagButton.addEventListener("click", () => {
 
   const productInfo = {
     id: productId,
-    name: productName.textContent,
+    title: productDescription.textContent,
     price: productRegularPrice.textContent,
     discountedPrice: productDiscountedPrice.textContent,
     image: productImage.src,
@@ -71,18 +76,6 @@ fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
       sizeButton.textContent = size;
       sizeButton.classList.add("size-button");
 
-      // Add a click event listener to the size button
-      sizeButton.addEventListener("click", () => {
-        // Handle size selection, e.g., change the style of the selected size
-        // You can also use this to store the selected size for adding to the cart
-        // For this example, let's just add a border to the selected size
-        if (selectedSize) {
-          selectedSize.classList.remove("selected-size");
-        }
-        sizeButton.classList.add("selected-size");
-        selectedSize = sizeButton;
-      });
-
       // Append the size button to the size options container
       productSizes.appendChild(sizeButton);
     });
@@ -97,7 +90,11 @@ fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
     }
 
     productDetails.textContent = product.description;
+
+    loadingIndicator.style.display = 'none'; // Hide the loading indicator after the API call is complete
   })
+  
   .catch((error) => {
     console.error("Error fetching product data:", error);
+    loadingIndicator.style.display = 'none'; // Hide the loading indicator in case of an error
   });
