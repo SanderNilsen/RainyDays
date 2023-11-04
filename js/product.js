@@ -97,4 +97,9 @@ fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
   .catch((error) => {
     console.error("Error fetching product data:", error);
     loadingIndicator.style.display = 'none'; // Hide the loading indicator in case of an error
+
+    // Display the error message
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.textContent = "Error: Product not found";
+    errorMessage.style.display = 'block';
   });

@@ -27,7 +27,6 @@ header {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   top: 0;
   z-index: 1;
-
 }
 
 .header-container {
@@ -54,7 +53,7 @@ nav,
   height: 53px;
 }
 
-#bag-count{
+#bag-count {
   color: #0a3641;
   display: inline;
 }
@@ -169,24 +168,25 @@ a:hover {
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-  }
+}
 
-  .loader, .productloader {
-    align-self:center;
-    position:absolute;
-  }
+.loader,
+.productloader {
+  align-self: center;
+  position: absolute;
+}
 
-  @keyframes rotation {
+@keyframes rotation {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  } 
+}
 
 h1 {
-font-size: 28px;
+  font-size: 28px;
 }
 
 main img {
@@ -298,7 +298,7 @@ main {
   justify-content: center;
   overflow: hidden;
   margin-bottom: 50px;
-  box-shadow: inset 0 0 10px  rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .sale_text {
@@ -322,18 +322,18 @@ main {
   display: flex;
   flex-direction: column;
   width: 180px;
-  gap:5px;
+  gap: 5px;
 }
 
 .sale-product a {
- color: #ffffff;
- align-self: start;
- margin-top: 10px;
+  color: #ffffff;
+  align-self: start;
+  margin-top: 10px;
 }
 
 .sale-price {
   text-decoration-line: line-through;
-  color:white;
+  color: white;
   font-size: large;
   margin: 0px;
 }
@@ -345,8 +345,8 @@ main {
   margin: 0px;
 }
 
-.sale-title{
-  color:white;
+.sale-title {
+  color: white;
 }
 
 .product-discountedPrice {
@@ -448,7 +448,7 @@ footer a {
   color: #0a3641;
   display: flex;
   padding-left: 40px;
-  gap:10px;
+  gap: 10px;
 }
 
 #productDiscountedPrice {
@@ -456,6 +456,13 @@ footer a {
 }
 
 /* Product-Page */
+
+#error-message {
+  display: none;
+  color: red;
+  text-align: center;
+  margin-top: 30px;
+}
 
 .main-product-container {
   display: flex;
@@ -477,8 +484,8 @@ footer a {
 }
 
 #productDescription {
-   font-size: 20px;
-   margin: 0px;
+  font-size: 20px;
+  margin: 0px;
 }
 
 .product-info-container h3 {
@@ -510,8 +517,7 @@ footer a {
 .addtobag-button {
   border: none;
   cursor: pointer;
-  text-transform:uppercase;
-
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -522,7 +528,7 @@ footer a {
 
 .product-info ul {
   padding-left: 20px;
-  list-style:disc;
+  list-style: disc;
 }
 
 .heading-suggestions {
@@ -582,12 +588,13 @@ td {
 }
 
 .continue-button {
-margin-top: 50px;
-text-align-last: center;
-color:#0a3641;
+  margin-top: 50px;
+  text-align-last: center;
+  color: #0a3641;
 }
 
-button, .remove-item {
+button,
+.remove-item {
   color: rgb(100, 100, 100);
   margin: 0px;
   border: none;
@@ -596,7 +603,7 @@ button, .remove-item {
 }
 
 .remove-item:hover {
-  color:white;
+  color: white;
 }
 
 .checkout-button {
@@ -616,7 +623,7 @@ button, .remove-item {
 .checkout-form {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 }
 
 fieldset {
@@ -625,7 +632,7 @@ fieldset {
   margin: 0px;
   gap: 10px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 legend {
@@ -633,7 +640,7 @@ legend {
   margin-bottom: 10px;
 }
 
-.checkout-submit{
+.checkout-submit {
   display: none;
 }
 
@@ -707,7 +714,7 @@ legend {
 }
 
 .map {
-  border-style:none;
+  border-style: none;
 }
 
 /* Contact */
@@ -775,7 +782,7 @@ legend {
 
   .hamburger-menu {
     display: flex;
-}
+  }
 
   nav {
     position: absolute;
@@ -787,8 +794,8 @@ legend {
   nav ul {
     gap: 0px;
   }
-  
-.nav-links {
+
+  .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -798,12 +805,12 @@ legend {
     text-align: center;
     z-index: 1;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-}
+  }
 
-.nav-links.active {
+  .nav-links.active {
     display: flex;
     align-items: flex-start;
-}
+  }
 
   .logo {
     grid-column: 2;
@@ -836,7 +843,7 @@ legend {
     margin-bottom: 40px;
   }
 
-  .main-mountain-background{
+  .main-mountain-background {
     display: none;
   }
 
@@ -867,7 +874,7 @@ legend {
 
   /* Mobile product-page */
   .top-main-nav {
-   padding-top: 20px;
+    padding-top: 20px;
   }
 
   .product1-zoom-top,
@@ -896,9 +903,10 @@ legend {
     justify-content: flex-start;
   }
 
-  #productColor, #productSizes {
+  #productColor,
+  #productSizes {
     text-align: center;
-  }  
+  }
 
   /* Mobile footer */
 
