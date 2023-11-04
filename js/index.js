@@ -66,7 +66,7 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
       container.appendChild(productDiv);
     });
 
-    loadingIndicator.style.display = 'none'; // Hide the loading indicator after the API call is complete
+    loadingIndicator.style.display = 'none';
   })
   .catch(error => {
     console.error('Error fetching data:', error);

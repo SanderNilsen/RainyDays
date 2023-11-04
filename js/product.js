@@ -1,13 +1,13 @@
 // Loading indicator element
 const loadingIndicator = document.getElementById('loading-indicator');
 
-loadingIndicator.style.display = 'block'; // Show the loading indicator
+loadingIndicator.style.display = 'block'; 
 
 // Get the product ID from the URL query parameter
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
 
-// Select HTML elements to update
+// HTML elements to update
 const productImage = document.getElementById("productImage");
 const productName = document.getElementById("productName");
 const productDescription = document.getElementById("productDescription");
@@ -23,7 +23,6 @@ const addToBagButton = document.createElement("button");
 addToBagButton.textContent = "Add to Bag";
 addToBagButton.classList.add("addtobag-button", "button"); // Add CSS classes for styling
 
-// Add a click event listener to the button
 addToBagButton.addEventListener("click", () => {
   // Retrieve the product information from the page
 
@@ -50,7 +49,7 @@ addToBagButton.addEventListener("click", () => {
   localStorage.setItem("itemCount", itemCount);
 
   // Feedback to the user
-  const confirmationMessage = `Product added to your bag!`;
+  const confirmationMessage = "Product added to your bag! Click on the bag icon in the top right to proceed to checkout."
   alert(confirmationMessage);
 });
 
@@ -91,12 +90,12 @@ fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
 
     productDetails.textContent = product.description;
 
-    loadingIndicator.style.display = 'none'; // Hide the loading indicator after the API call is complete
+    loadingIndicator.style.display = 'none'; 
   })
   
   .catch((error) => {
     console.error("Error fetching product data:", error);
-    loadingIndicator.style.display = 'none'; // Hide the loading indicator in case of an error
+    loadingIndicator.style.display = 'none'; 
 
     // Display the error message
     const errorMessage = document.getElementById("error-message");

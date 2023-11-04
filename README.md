@@ -1,10 +1,10 @@
 # Rainy Days - Cross-Course-Project
 <img src="images/RD-Template.png">
 
-The Rainy Days course assignment is a simple e-commerce website for selling clothing items. It utilizes HTML, CSS, and JavaScript.
+The Rainy Days course assignment is a simple e-commerce website for selling clothing items made with HTML, CSS and JavaScript.
 
 ## Description
-This project marks my first experience with both web design and web coding. I utilized HTML and CSS to construct the website's structure and style. Furthermore, I recently incorporated vanilla JavaScript to fetch dynamic data from an API. I have learned coding along the way in this project which has been valuable, but it is also reflected in the code. I have discovered repetitive code snippets that could have been improved, especially after reworking the original hardcoded part into JavaScript. In addition, I have used different methods in the different JavaScript files, which is a consequence of my continuous learning process. I will take these experiences with me to my next project and aim to be more consistent and improve the code even further.
+This project marks my first experience with both web design and web coding. I have used HTML and CSS to construct the website's structure and style. Furthermore, I recently incorporated vanilla JavaScript to fetch dynamic data from an API. I have learned coding along the way in this project which has been valuable, but it is also reflected in the code. I have discovered repetitive code snippets that could have been improved, especially after reworking the original hardcoded part into JavaScript. In addition, I have used different methods in the different JavaScript files, which is a consequence of my continuous learning process. I will take these experiences with me to my next project and aim to be more consistent and improve the code even further.
 
 ## Overview
 - `index.html`: Home page with categories and products on sale.

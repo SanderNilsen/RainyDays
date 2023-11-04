@@ -6,7 +6,7 @@ const bagContainer = document.querySelector(".bag-container");
 const bagTitle = document.querySelector(".top-main-nav");
 bagTitle.textContent = `Your bag (${cart.length})`;
 
-// Iterate through the cart items and create elements for each item
+// Create elements for each item
 cart.forEach((item) => {
   const productDiv = document.createElement("div");
   productDiv.classList.add("product1");
@@ -28,9 +28,9 @@ cart.forEach((item) => {
   priceInfo.innerHTML = `<span id="productDiscountedPrice">${item.discountedPrice} </span> <s id="productRegularPrice">${item.price} </s>`;
 
   const removeLink = document.createElement("button");
-  // Add a click event to remove the item from the cart
+  // Add remove the item from the cart
   removeLink.addEventListener("click", () => {
-    // Find the index of the item in the cart
+    // Find the item in the cart
     const index = cart.findIndex((cartItem) => cartItem.id === item.id);
     if (index !== -1) {
       // Remove the item from the cart
@@ -42,11 +42,11 @@ cart.forEach((item) => {
       // Remove the item's element from the bag
       bagContainer.removeChild(productDiv);
 
-      // Optionally, update the item count
+      // Update the item count
       const itemCount = cart.length;
       localStorage.setItem("itemCount", itemCount);
 
-      // Optionally, update the item count displayed in the header
+      // Update the item count displayed in the header
       const itemCountElement = document.getElementById("bag-count");
       if (itemCount > 0) {
         itemCountElement.textContent = itemCount;
