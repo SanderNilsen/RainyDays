@@ -55,6 +55,7 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
 
       const productLink = document.createElement('a');
       productLink.href = `product.html?id=${product.id}`;
+      productLink.classList.add('viewdetails');
       productLink.textContent = 'View Details';
 
       productDiv.appendChild(productImage);
