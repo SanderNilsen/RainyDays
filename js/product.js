@@ -178,7 +178,7 @@ addToBagButton.addEventListener("click", () => {
 document.querySelector(".product-info-container").appendChild(addToBagButton);
 
 // Fetch product details using the product ID
-fetch(`http://sandernilsen.com/wp-json/wc/store/products${productId}`)
+fetch(`https://sandernilsen.com/wp-json/wc/store/products${productId}`)
   .then((response) => response.json())
   .then((product) => {
     // Update the HTML elements with the retrieved data

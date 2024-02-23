@@ -64,7 +64,7 @@ fetch("https://api.noroff.dev/api/v1/rainy-days")
 const loadingIndicator = document.getElementById('loading-indicator');
 loadingIndicator.style.display = 'block';
 
-fetch("http://sandernilsen.com/wp-json/wc/store/products")
+fetch("https://sandernilsen.com/wp-json/wc/store/products")
   .then((response) => response.json())
   .then((data) => {
     const productsContainer = document.querySelector(".products_container");
