@@ -130,7 +130,6 @@ const productRegularPrice = document.getElementById("productRegularPrice");
 const productDetails = document.getElementById("productDetails");
 const productFeatures = document.getElementById("productFeatures");
 const productColor = document.getElementById("productColor");
-const productSizes = document.getElementById("productSizes");
 
 // Create the "Add to Bag" button element
 const addToBagButton = document.createElement("button");
@@ -189,16 +188,6 @@ fetch(`https://sandernilsen.com/wp-json/wc/store/products/${productId}`)
     productDiscountedPrice.textContent = `${product.prices.sale_price} kr`;
     productColor.textContent = product.base_color;
 
-    // Check if there are available sizes
-    const sizes = product.sizes;
-    sizes.forEach((size) => {
-      const sizeButton = document.createElement("button");
-      sizeButton.textContent = size;
-      sizeButton.classList.add("size-button");
-
-      // Append the size button to the size options container
-      productSizes.appendChild(sizeButton);
-    });
 
     if (product.on_sale) {
       productDiscountedPrice.textContent = `${product.prices.sale_price} kr`;
