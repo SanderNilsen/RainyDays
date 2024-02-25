@@ -55,7 +55,7 @@ fetch("https://sandernilsen.com/wp-json/wc/store/products")
 
       const productLink = document.createElement('a');
       productLink.href = `product.html?id=${product.id}`;
-      productLink.classList.add('viewdetails');
+      productLink.classList.add('viewdetailshome');
       productLink.textContent = 'View Details';
 
       productDiv.appendChild(productImage);

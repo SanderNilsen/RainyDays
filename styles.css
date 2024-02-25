@@ -367,7 +367,16 @@ button:hover {
   cursor: pointer;
 }
 
-.viewdetails:hover {
+.viewdetailshome {
+  color: white;
+  background-color: #0a3641;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.viewdetailshome:hover {
   transition: 0.2s all ease-in-out;
   background-color: white;
   color:#0a3641
