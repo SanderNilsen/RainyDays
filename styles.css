@@ -379,7 +379,7 @@ button:hover {
 .viewdetailshome:hover {
   transition: 0.2s all ease-in-out;
   background-color: white;
-  color:#0a3641
+  color: #0a3641;
 }
 
 /* Footer */

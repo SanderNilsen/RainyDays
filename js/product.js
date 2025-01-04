@@ -1,7 +1,7 @@
 // Loading indicator element
-const loadingIndicator = document.getElementById('loading-indicator');
+const loadingIndicator = document.getElementById("loading-indicator");
 
-loadingIndicator.style.display = 'block';
+loadingIndicator.style.display = "block";
 
 // Get the product ID from the URL query parameter
 const urlParams = new URLSearchParams(window.location.search);
@@ -47,12 +47,15 @@ addToBagButton.addEventListener("click", () => {
   localStorage.setItem("itemCount", itemCount);
 
   // Continue shopping or go to the cart
-  const confirmationMessage = "Product added to your bag! What would you like to do next?";
-  const continueShopping = confirm(`${confirmationMessage}\n\nClick 'OK' to continue shopping or 'Cancel' to go to the bag.`);
+  const confirmationMessage =
+    "Product added to your bag! What would you like to do next?";
+  const continueShopping = confirm(
+    `${confirmationMessage}\n\nClick 'OK' to continue shopping or 'Cancel' to go to the bag.`,
+  );
 
   if (!continueShopping) {
     // Redirect the user to the cart or perform other actions
-    window.location.href = "bag.html"; 
+    window.location.href = "bag.html";
   } else {
     // Refresh the page if the user chooses to continue shopping
     window.location.reload();
@@ -96,17 +99,15 @@ fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
 
     productDetails.textContent = product.description;
 
-    loadingIndicator.style.display = 'none';
+    loadingIndicator.style.display = "none";
   })
 
   .catch((error) => {
     console.error("Error fetching product data:", error);
-    loadingIndicator.style.display = 'none';
+    loadingIndicator.style.display = "none";
 
     // Display the error message
     const errorMessage = document.getElementById("error-message");
     errorMessage.textContent = "Error: Product not found";
-    errorMessage.style.display = 'block';
+    errorMessage.style.display = "block";
   });
-
-

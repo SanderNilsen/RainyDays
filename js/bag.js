@@ -21,7 +21,7 @@ cart.forEach((item) => {
 
   const productName = document.createElement("p");
   productName.textContent = item.title;
-  
+
   const productDescription = document.createElement("p");
 
   const priceInfo = document.createElement("p");
