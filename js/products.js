@@ -38,7 +38,7 @@ fetch("https://api.noroff.dev/api/v1/rainy-days")
       const viewDetailsButton = document.createElement("button");
       viewDetailsButton.classList.add("viewdetails");
       viewDetailsButton.textContent = "View Details";
-      viewDetailsButton.addEventListener("click", (e) => {
+      viewDetailsButton.addEventListener("click", () => {
         window.location.href = productLink.href;
       });
 

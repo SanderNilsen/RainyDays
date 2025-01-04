@@ -14,7 +14,6 @@ const productDescription = document.getElementById("productDescription");
 const productDiscountedPrice = document.getElementById("productDiscountedPrice");
 const productRegularPrice = document.getElementById("productRegularPrice");
 const productDetails = document.getElementById("productDetails");
-const productFeatures = document.getElementById("productFeatures");
 const productColor = document.getElementById("productColor");
 const productSizes = document.getElementById("productSizes");
 
